@@ -1,0 +1,81 @@
+/* test_123 main css file */
+
+#app {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 220px;
+    height: 471px;
+}
+
+#app h6 {
+    margin: 2px;
+}
+
+#app .loading {
+    float: right;
+    display: none;
+}
+
+#app .selectionBox {
+    padding-top: 15px;
+}
+
+#logoContainer {
+    text-align: center;
+}
+
+#buttonContainer {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#status {
+    text-align: center;
+}
+
+/* Mobile phones portrait - reduce logo size */
+@media screen and (max-device-width: 320px) and (orientation: portrait) {
+    #app {
+        height: 350px;
+    }
+
+    #logoContainer img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+/* Mobile phones landscape - controls appear in the right side of the screen, and the logo in the left */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+    #app {
+        height: 220px;
+        width: 471px;
+    }
+
+    #app select {
+        width: 220px;
+        min-width: 220px;
+    }
+
+    #controlsContainer {
+        float: right;
+        margin-top: -20px;
+    }
+
+    #logoContainer {
+        float: left;
+    }
+
+    #logoContainer img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #status {
+        max-width: 210px;
+    }
+}
+
+
